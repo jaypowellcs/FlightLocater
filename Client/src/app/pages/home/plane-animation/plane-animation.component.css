@@ -1,0 +1,87 @@
+@keyframes realisticFly {
+    0% {
+      transform: translateX(-100%) translateY(40px) scale(0.6) rotateY(-20deg); /* Takeoff, banking */
+    }
+    10% {
+      transform: translateX(10vw) translateY(-30px) scale(1) rotateY(-10deg); /* Leaving ground */
+    }
+    50% {
+      transform: translateX(50vw) translateY(-80px) scale(1.4) rotateY(0deg) rotateX(10deg); /* Mid-flight with height */
+    }
+    90% {
+      transform: translateX(90vw) translateY(-10px) scale(1) rotateY(15deg); /* Banking towards landing */
+    }
+    100% {
+      transform: translateX(100%) translateY(40px) scale(0.6) rotateY(0deg); /* Landing */
+    }
+  }
+  
+  @keyframes dynamicShadow {
+    0% {
+      transform: translateX(-100%) translateY(50px) scale(0.5);
+      opacity: 0.3;
+      filter: blur(2px);
+    }
+    50% {
+      transform: translateX(50vw) translateY(65px) scale(0.8);
+      opacity: 0.6;
+      filter: blur(1px);
+    }
+    100% {
+      transform: translateX(100%) translateY(50px) scale(0.5);
+      opacity: 0.2;
+      filter: blur(2px);
+    }
+  }
+  
+  @keyframes cloudFloat {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  
+  @keyframes smokeTrail {
+    0% {
+      opacity: 0;
+      filter: blur(5px);
+    }
+    50% {
+      opacity: 0.5;
+      filter: blur(8px);
+    }
+    100% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateX(200px);
+    }
+  }
+  
+  /* Enhanced 3D Plane animation */
+  .plane-container {
+    animation: realisticFly 12s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+    transform-origin: bottom;
+  }
+  
+  /* Plane shadow */
+  .plane-shadow {
+    animation: dynamicShadow 12s ease-in-out infinite;
+  }
+  
+  /* Cloud animations */
+  .cloud-1, .cloud-2, .cloud-3 {
+    animation: cloudFloat 35s linear infinite;
+  }
+  
+  .cloud-1 { animation-duration: 40s; }
+  .cloud-2 { animation-duration: 50s; }
+  .cloud-3 { animation-duration: 55s; }
+  
+  /* Smoke trail */
+  .smoke-trail {
+    background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0));
+    animation: smokeTrail 2s linear infinite;
+  }
+  
