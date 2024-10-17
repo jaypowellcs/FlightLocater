@@ -428,26 +428,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jay\\.nuget\\packages\\": {}
+    "/home/james/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jay\\Projects\\Net\\FlightLocater\\Server\\Server.csproj",
+      "projectUniqueName": "/home/james/Projects/FlightLocater/Server/Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\Users\\Jay\\Projects\\Net\\FlightLocater\\Server\\Server.csproj",
-      "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jay\\Projects\\Net\\FlightLocater\\Server\\obj\\",
+      "projectPath": "/home/james/Projects/FlightLocater/Server/Server.csproj",
+      "packagesPath": "/home/james/.nuget/packages/",
+      "outputPath": "/home/james/Projects/FlightLocater/Server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/james/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -490,7 +488,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
